@@ -1,12 +1,12 @@
-services:
 
+services:
   postgres:
     image: postgres:13-alpine
     ports:
-      - '3306:3306'
+      - '5432:5432'
     volumes:
-      - ./data:/var/lib/postgresql/data
+      - ./data:/var/lib/postgresql
     environment:
-      - POSTGRES_DB=db
+      - POSTGRES_DATABASE=db
       - POSTGRES_USER=user
       - POSTGRES_PASSWORD=9mREsvXDs9Gk89Ef
